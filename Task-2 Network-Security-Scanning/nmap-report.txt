@@ -1,0 +1,11 @@
+# Nmap 7.95 scan initiated Fri Feb 27 02:42:58 2026 as: /usr/lib/nmap/nmap --privileged -sV -O -oN namp-report.txt 192.168.56.102
+Nmap scan report for 192.168.56.102
+Host is up (0.0012s latency).
+All 1000 scanned ports on 192.168.56.102 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: AXIS 2100 Network Camera (92%), D-Link DP-300U, DP-G310, or Hamlet HPS01UU print server (92%), HP Tru64 UNIX 5.1A (92%), Sanyo PLC-XU88 digital video projector (92%), TRENDnet TV-IP100 webcam (92%), Vantage HD7100S satellite receiver (92%), Linux 2.6.8 (90%), Asus WL-500gP wireless broadband router (89%), Cisco 1812, 3640, or 3700 router (IOS 12.4) (89%), Cisco DOCSIS cable modem termination server (IOS 12.1) (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 27 02:43:05 2026 -- 1 IP address (1 host up) scanned in 6.68 seconds
