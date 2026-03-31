@@ -1,0 +1,47 @@
+
+[0;34m[1m============================================================[0m
+[0;34m[1m   ApexPlanet Capstone — Lab Readiness Check[0m
+[0;34m[1m   Kali Linux Attacker: 192.168.56.10[0m
+[0;34m[1m============================================================[0m
+
+[0;36m[1m[1] Tool availability checks[0m
+  [0;32m[PASS][0m Nmap — Nmap version 7.95 ( https://nmap.org )
+  [0;31m[FAIL][0m Metasploit — got: 
+  [0;31m[FAIL][0m SQLMap — got: 1.9.11#stable
+  [0;32m[PASS][0m Nikto — Nikto 2.5.0 (LW 2.5)
+  [0;32m[PASS][0m Wireshark — Wireshark 4.6.0.
+  [0;31m[FAIL][0m Gobuster — got: No help topic for 'version'
+  [0;32m[PASS][0m Python3 — Python 3.13.9
+  [0;32m[PASS][0m Curl — curl 8.17.0 (x86_64-pc-linux-gnu) libcurl/8.17.0 OpenSSL/3.5.4 zlib/1.3.1 brotli/1.1.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.2 libssh2/1.11.1 nghttp2/1.64.0 ngtcp2/1.16.0 nghttp3/1.12.0 librtmp/2.3 mit-krb5/1.21.3 OpenLDAP/2.6.10
+  [0;31m[FAIL][0m Dirb — got: 
+
+[0;36m[1m[2] Network connectivity checks[0m
+  [0;32m[PASS][0m Ping DVWA target (192.168.56.103) — reachable
+  [0;32m[PASS][0m HTTP DVWA target (192.168.56.103:80) — responding
+  [0;32m[PASS][0m Ping bWAPP target (192.168.56.103) — reachable
+  [0;32m[PASS][0m HTTP bWAPP target (192.168.56.103:80) — responding
+
+[0;36m[1m  Checking DVWA application...[0m
+  [0;32m[PASS][0m DVWA login page accessible at http://192.168.56.103/dvwa/login.php
+
+[0;36m[1m  Checking bWAPP application...[0m
+  [1;33m[WARN][0m bWAPP returned HTTP 404 — bee-box may need http://192.168.56.103/bWAPP/install.php first
+
+[0;36m[1m[3] Burp Suite check[0m
+  [0;32m[PASS][0m Burp Suite found at /usr/bin/burpsuite
+  [1;33m[INFO][0m Launch manually: burpsuite & (configure browser proxy to 127.0.0.1:8080)
+
+[0;36m[1m[4] Current IP configuration[0m
+  Kali IP addresses:
+    192.168.56.30/24
+    192.168.56.103/24
+
+[0;34m[1m============================================================[0m
+[1m  Results: [0;32m11 passed[0m  [0;31m4 failed[0m  [1;33m1 warnings[0m
+[0;34m[1m============================================================[0m
+
+  [0;31m[1mFix FAILED items before starting exploitation.[0m
+
+  [0;34mSave this output as:[0m screenshots/00_lab_verification.txt
+  [0;34mCommand:[0m ./lab-check.sh | tee screenshots/00_lab_verification.txt
+
